@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*CUERPO DE LA PÁGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
+	vertical-align: baseline;
+    
+}
+body{
+    background: url(Libreria.jpg);
+    background-size: 100vw 80vh;
+
+    font-family: 'Poppins', sans-serif;
+}
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+/*ENCABEZADO*/
+.header-nav{
+    background-color: #414247;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+	box-shadow: 0px 1px 10px
+	rgba(0,0,0,0.4);
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: rgba(78, 233, 181, 0.98);
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo h1{
+	color: rgba(78, 233, 181, 0.98);
+	font-weight: 400;
+	font-size: 24px;
+	cursor: default;
+	margin-left: 10px;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: rgba(78, 233, 181, 0.98);
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	border-bottom: 4px solid rgba(78, 233, 181, 0.98);
+	padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+
+/*BARRA LATERAL DE MENÚ*/
+.barra{
+	font-family: 'Montserrat Alternates', sans-serif;
+
+	width: 5%;
+	height: 5%;
+
+	position: fixed;
+
+	transition: .4s all;
+
+	z-index: 1;
+}
+
+.barra ul{
+	padding: 0px;
+	text-align: center;
+}
+
+.barra li{
+	transition: .3s all;
+	list-style: none;
+}
+
+.barra a{
+	text-decoration: none;
+	list-style: none;
+
+	transition: .3s all;
+	font-size: 0px;
+	padding: 0%;
+}
+
+.barra h2{
+	text-align: center;
+	color: black;
+	padding: 7px;
+	padding-bottom: 7px;
+	
+	font-size: 0px;
+}
+
+.barra img{
+	padding-top: 30px;
+	padding-left: -5px;
+}
+
+.barra:hover{
+	width: 70%;
+	height: 100vh;
+
+	background-color: rgba(78, 233, 181, 0.98);
+}
+
+.barra:hover h2{
+	padding: 15px;
+	font-size: 35px;
+}
+
+.barra:hover a{
+	font-size: 20px;
+	color: black;
+
+	display: block;
+	padding: 20px;
+}
+
+.barra:hover img{
+	height: 0px;
+}
+
+.barra:hover li{
+	border-top: 1px solid white;
+
+	width: 100%;
+}
+
+.barra:hover ul:last-of-type{
+	border-bottom: 1px solid white;
+}
+
+.barra:hover a:hover{
+	font-size: 25px;
+	padding: 30px 0px;
+	background-color: white;
+}
+
+@media (min-width: 768px){
+	.barra:hover{
+		width: 45%;
+	}
+}
+
+
+/*INFO DE PAGINA*/
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1{
+    padding: 15px 55px;
+}
+
+.blog-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 p{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.blog h2{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.salud{
+    background-color: #22221c57;
+}
+.salud-content{
+    text-align: center;
+}
+
+.footer{
+    padding: 100px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+@media(max-width:991px){
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30x;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .salud{
+        padding: 30px;
+    }
+
+    .salud-content h2{
+        padding: 0;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+
+    .salud-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    
+    .salud-img{
+        display: none;
+    }
+
+    .services{
+        padding: 30px;
+    }
+
+    .services-content p{
+    padding: 0;
+    }
+
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1{
+        margin-bottom: 25px;
+    }
+
+    .general{
+        flex-direction: column;
+    }
+
+    .general-1{
+        width: 100px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3{
+        display: none;
+    }
+
+    .blog{
+        padding: 30px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1{
+        padding: 0;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
